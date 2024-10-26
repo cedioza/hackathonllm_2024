@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+<div class="p-6 max-w-7xl mx-auto">
+    <header class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-semibold">GuruSup</h1>
+        <button class="bg-red-500 px-4 py-2 rounded">Reload Tickets</button>
+    </header>
+    
+    <div class="flex gap-4 mb-4">
+        <button class="px-4 py-2 bg-gray-800 rounded">Needs supervision (2)</button>
+        <button class="px-4 py-2 bg-gray-800 rounded">Auto answered (2)</button>
+        <button class="px-4 py-2 bg-gray-800 rounded">Answered tickets (2)</button>
+        <button class="px-4 py-2 bg-gray-800 rounded">All</button>
+    </div>
+
+    <table class="min-w-full bg-gray-800 rounded-lg">
+        <thead>
+            <tr>
+                <th class="py-3 px-6">Info</th>
+                <th class="py-3 px-6">Origin</th>
+                <th class="py-3 px-6">Messages</th>
+                <th class="py-3 px-6">Created</th>
+                <th class="py-3 px-6">Last Message</th>
+                <th class="py-3 px-6">Sender</th>
+                <th class="py-3 px-6">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-b border-gray-700">
+                <td class="py-4 px-6">Hi, I'm a ticket title<br><span class="text-gray-400">Hey Olivia, Katherine sent me over the latest doc...</span></td>
+                <td class="py-4 px-6">Gmail</td>
+                <td class="py-4 px-6">3</td>
+                <td class="py-4 px-6">Jan 13, 2024</td>
+                <td class="py-4 px-6">Jan 13, 2024</td>
+                <td class="py-4 px-6">Olivia Rhye</td>
+                <td class="py-4 px-6"><span class="bg-red-500 text-white px-2 py-1 rounded">NEW</span></td>
+            </tr>
+            <!-- Más filas aquí -->
+        </tbody>
+    </table>
+
+    <div class="flex justify-between items-center mt-4">
+        <button class="bg-gray-800 px-4 py-2 rounded">Previous</button>
+        <div class="text-gray-400">1 2 3 ... 10</div>
+        <button class="bg-gray-800 px-4 py-2 rounded">Next</button>
+    </div>
+</div>
+</body>
+</html>
